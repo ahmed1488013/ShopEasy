@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Shopping List Organizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEasy - Shopping List</h1>
+    </header>
+
+    <main class="shopping-container">
+        <section class="shopping-list">
+            <input type="text" id="item-input" placeholder="Add a new item..." />
+            <button id="add-item-btn">Add Item</button>
+            <div id="sort-options" class="sort-options">
+                <label for="sort-items">Sort By:</label>
+                <select id="sort-items">
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="reverse">Reverse Alphabetical</option>
+                </select>
+            </div>
+            <ul id="shopping-items-list">
+                <!-- Shopping items will be listed here -->
+            </ul>
+        </section>
+
+        <button id="share-list" class="share-button">Share List</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
